@@ -33,8 +33,8 @@ abstract class TestCase extends TestBench
 	        'database' => 'testbench',
 	        'host' => '127.0.0.1',
 	        'port' => '3306',
-	        'username' => 'root',
-	        'password' => 'secret'
+	        'username' => '',
+	        'password' => ''
 	    ]);
 
 	    $app['config']->set('coinpayments', [
@@ -48,13 +48,13 @@ abstract class TestCase extends TestBench
 	        'driver'   => 'smtp',
 	        'host' => 'smtp.mailtrap.io',
 	        'port' => '2525',
-	        'username' => 'fdd7c89ea0492a',
-	        'password' => '920293f91c82cf'
+	        'username' => '',
+	        'password' => ''
 	    ]);
 
 	    $app['config']->set('mail.from', [
-	    	'address' => 'info@mohsen-nurisa.ir',
-	    	'name' => 'mohsen nurisa'
+	    	'address' => '',
+	    	'name' => ''
 	    ]);
 
 
