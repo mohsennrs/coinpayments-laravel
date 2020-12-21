@@ -1,0 +1,46 @@
+{
+    "name": "hattori/coinpayments-laravel",
+    "description": "Laravel wrapper for coinpayment",
+    "license": "MIT", 
+    "authors": [
+        {
+            "name": "Mohsen Nurisa",
+            "email": "mohsen.nuirsa@gmail.com",
+            "homepage": "https://mohsen-nourisa.ir"
+        }
+    ],
+    "homepage": "https://github.com/hattori/coinpayments-laravel",
+    "keywords": ["Laravel", "Coinpayments"],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8",
+        "laravel/legacy-factories": "^1.0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hattori\\Coinpayments\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hattori\\Coinpayments\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hattori\\Coinpayments\\CoinpaymentsServiceProvider"
+
+            ],
+            "aliases": {
+                "Coinpayments": "Hattori\\Coinpayments\\Facades\\Coinpayments"
+            }
+        }
+    }
+}
